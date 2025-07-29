@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniEval - AI Output Evaluator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>MiniEval</h1>
+    <p>Compare two AI-generated outputs and get a similarity score.</p>
+
+    <form method="POST">
+      <label for="output1">Output 1:</label>
+      <textarea name="output1" required>{{ output1 }}</textarea>
+
+      <label for="output2">Output 2:</label>
+      <textarea name="output2" required>{{ output2 }}</textarea>
+
+      <button type="submit">Evaluate</button>
+    </form>
+
+    {% if score is not none %}
+    <div class="result">
+      <h2>Similarity Score: {{ score }}%</h2>
+      <p>This represents how similar the two outputs are based on language patterns.</p>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
