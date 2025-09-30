@@ -1,12 +1,12 @@
 # MiniEval
 
-MiniEval is a lightweight browser based tool to compare and evaluate two AI generated text outputs. It uses TF-IDF and cosine similarity to calculate how closely the responses align useful for AI practitioners, researchers, or anyone working with language models.
+MiniEval is a lightweight browser based tool to compare and evaluate two AI generated text outputs. It uses TF IDF and cosine similarity to calculate how closely the responses align useful for AI practitioners, researchers, or anyone working with language models.
 
 Live App: [https://minieval.onrender.com](https://minieval.onrender.com)
 
 ## Features
 
-- Compare two AI-generated outputs side by side
+- Compare two AI generated outputs side by side
 - Generate a similarity score using cosine similarity
 - Visual bar for interpreting the score
 - Download results as a .txt file
@@ -14,7 +14,7 @@ Live App: [https://minieval.onrender.com](https://minieval.onrender.com)
 ## Tech Stack
 
 - Python, Flask
-- scikit-learn, nltk
+- scikit learn, nltk
 - HTML, CSS (vanilla)
 - Deployed on Render
 
